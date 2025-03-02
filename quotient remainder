@@ -1,0 +1,21 @@
+""" Remainder Package
+coded and designed by Artela and Arthur Smith
+"""
+
+"""sample:
+x = LongDivision(2, 2)
+print(x.remainder, x.quotient)
+"""
+
+class RemainderQuotientFinder:
+    def __init__(self, num, divisor):
+        try:
+            if int(num/divisor) < num/divisor:
+                self.quotient = int(num/divisor)
+                self.remainder = num - self.quotient * divisor
+            elif num/divisor == int(num/divisor):
+                self.quotient = int(num/divisor)
+                self.remainder = 0
+        except ZeroDivisionError:
+            self.quotient = "ZeroDivisionError"
+            self.remainder = "ZeroDivisionError"
