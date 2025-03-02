@@ -1,1 +1,1 @@
-QuotientRemainderFinder
+RemainderQuotientFinder()
